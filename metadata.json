@@ -1,0 +1,5 @@
+{
+  "name": "Symbolize",
+  "description": "Convert images and shapes into copy-pasteable Unicode text symbols using AI visual analysis.",
+  "requestFramePermissions": []
+}

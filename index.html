@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Symbolize - Cipher Edition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --color-bg: #030303;
+        --color-surface: #0a0a0a;
+        --color-border: rgba(255, 255, 255, 0.08);
+        --primary-glow: 16, 185, 129;
+      }
+      
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--color-bg);
+        color: #e2e8f0;
+        overflow-x: hidden;
+        cursor: default;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      /* Professional Selection */
+      ::selection {
+        background: rgba(16, 185, 129, 0.3);
+        color: #fff;
+      }
+
+      /* 1. Refined Cyber Grid */
+      .cyber-grid {
+        position: fixed;
+        inset: 0;
+        background-image: 
+          linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+        background-size: 50px 50px;
+        mask-image: radial-gradient(circle at center, black 30%, transparent 80%);
+        pointer-events: none;
+        z-index: -2;
+      }
+
+      /* 7. Vignette Effect */
+      .vignette {
+        position: fixed;
+        inset: 0;
+        background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.6) 100%);
+        pointer-events: none;
+        z-index: -1;
+      }
+
+      /* 6. High-Fidelity Noise */
+      .noise-overlay {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 9999;
+        opacity: 0.025;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+      }
+
+      /* Ambient Mesh */
+      .aurora-blob {
+        position: absolute;
+        filter: blur(100px);
+        opacity: 0.3;
+        animation: float 15s infinite ease-in-out;
+        border-radius: 50%;
+        z-index: -2;
+        will-change: transform;
+      }
+      
+      @keyframes float {
+        0%, 100% { transform: translate(0, 0) scale(1); }
+        50% { transform: translate(20px, -20px) scale(1.1); }
+      }
+
+      .font-grotesk { font-family: 'Space Grotesk', sans-serif; }
+      .font-mono { font-family: 'JetBrains Mono', monospace; }
+
+      /* Slim Scrollbar */
+      ::-webkit-scrollbar { width: 5px; }
+      ::-webkit-scrollbar-track { background: var(--color-bg); }
+      ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+      ::-webkit-scrollbar-thumb:hover { background: #10b981; }
+
+      /* Staggered Entrance */
+      .animate-enter {
+        animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      @keyframes fadeUp {
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      /* Glitch Text Effect */
+      .glitch {
+        position: relative;
+        color: white;
+      }
+      .glitch::before, .glitch::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .glitch::before {
+        left: 2px;
+        text-shadow: -1px 0 #ff00c1;
+        clip: rect(44px, 450px, 56px, 0);
+        animation: glitch-anim 5s infinite linear alternate-reverse;
+      }
+      .glitch::after {
+        left: -2px;
+        text-shadow: -1px 0 #00fff9;
+        clip: rect(44px, 450px, 56px, 0);
+        animation: glitch-anim2 5s infinite linear alternate-reverse;
+      }
+      @keyframes glitch-anim {
+        0% { clip: rect(12px, 9999px, 52px, 0); }
+        5% { clip: rect(34px, 9999px, 12px, 0); }
+        100% { clip: rect(1px, 9999px, 98px, 0); }
+      }
+      @keyframes glitch-anim2 {
+        0% { clip: rect(65px, 9999px, 92px, 0); }
+        5% { clip: rect(12px, 9999px, 43px, 0); }
+        100% { clip: rect(3px, 9999px, 12px, 0); }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
