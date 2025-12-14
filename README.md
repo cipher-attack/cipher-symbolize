@@ -30,7 +30,7 @@
     </a>
     <br/>
     <img src="https://img.shields.io/badge/Made%20With-React%2019-61DAFB?style=flat-square&logo=react&logoColor=white&color=0f172a" alt="React" />
-    <img src="https://img.shields.io/badge/Powered%20By-Gemini%202.5-4285F4?style=flat-square&logo=google&logoColor=white&color=0f172a" alt="Gemini" />
+    <img src="https://img.shields.io/badge/Powerd%20By-CIPHER%20-4285F4?style=flat-square&logo=google&logoColor=white&color=0f172a" alt="CIPHER(Biruk getachew)" />
     <img src="https://img.shields.io/badge/Styled%20With-Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white&color=0f172a" alt="Tailwind" />
     <img src="https://img.shields.io/badge/Language-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white&color=0f172a" alt="TypeScript" />
   </p>
@@ -113,8 +113,8 @@ To deploy this system on your local machine, follow these precise instructions.
 
 1.  **Clone the Repository**
     ```bash
-    git clone https://github.com/cipher-attack/symbolize.git
-    cd symbolize
+    git clone https://github.com/cipher-attack/cipher-symbolize.git
+    cd cipher-symbolize
     ```
 
 2.  **Install Dependencies**
