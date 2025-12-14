@@ -4,7 +4,7 @@
   <!-- PROJECT LOGO -->
   <br />
   <div style="background: linear-gradient(to bottom right, #064e3b, #000000); padding: 20px; border-radius: 20px; width: 100px; height: 100px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 0 50px rgba(16, 185, 129, 0.2);">
-    <span style="font-size: 60px;">⌬</span>
+    <span style="font-size: 120px;">⌬</span>
   </div>
 
   <h1 style="font-size: 3rem; font-weight: 800; letter-spacing: 0.2em; margin-top: 20px;">
